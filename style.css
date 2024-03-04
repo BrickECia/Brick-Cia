@@ -371,9 +371,14 @@
         margin-top: 25px;
     }
 }
+@media screen and (max-width: 420px){
+    .botaoComprar a{
+        font-size: 12px; 
+    }
+}
 @media screen and (max-width: 320px){
     .botaoComprar a{
-        font-size: 13px; 
+        font-size: 11px; 
     }
     .fotoInicial img{
         width: 100%;
