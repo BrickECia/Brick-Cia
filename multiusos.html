@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8" ></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Brick & Cia</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="side">
+
+            <div class="menu-btn">
+              <i class="fas fa-bars"></i>
+            </div>
+            <div class="side-bar active">
+              <div class="close-btn">
+                <i class="fas fa-times"></i>
+              </div>
+              <div class="menu">
+                <div class="item"><a href="index.html">Inicio</a></div>
+                <div class="item"><a href="multiusos.html">Multiusos</a></div>
+                <div class="item">
+                  <a class="sub-btn">Eletro<i class="fas fa-angle-right dropdown"></i></a>
+                  <div class="sub-menu">
+                    <a href="tv.html" class="sub-item">TV</a>
+                    <a href="som.html" class="sub-item">Som</a>
+                    <a href="micro.html" class="sub-item">Micro-ondas</a>
+                  </div>
+                </div>
+                <div class="item"><a href="mesas.html">Mesas</a></div>
+                <div class="item"><a href="sofas.html">Sofás</a></div>
+                <div class="item">
+                  <a class="sub-btn">Máquinas de Lavar<i class="fas fa-angle-right dropdown"></i></a>
+                  <div class="sub-menu">
+                    <a href="5kg.html" class="sub-item">5kg</a>
+                    <a href="8kg.html" class="sub-item">8kg</a>
+                    <a href="10kg.html" class="sub-item">10kg</a>
+                  </div>
+                </div>
+                <div class="item"><a href="racks.html">Racks</a></div>
+                <div class="item"><a href="rusticos.html">Rústicos</a></div>
+              </div>
+            </div>
+    
+          </nav>
+        
+    
+    
+    
+    
+        
+        <nav class="menuHeader">    
+            <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="multiusos.html">Multiusos</a></li>
+            <li><a href="#">Eletro</a>
+                <ul>
+                    <li><a href="tv.html">Tv</a></li>
+                    <li><a href="som.html">Som</a></li>
+                    <li><a href="micro.html">Micro-ondas</a></li>
+                </ul>
+            </li>
+            <li><a href="mesas.html">Mesas</a></li>
+            <li><a href="sofas.html">Sofás</a></li>
+            <li><a href="#">Máquinas de Lavar</a>
+            <ul>
+              <li class="muellerHeader"><a href="#">Mueller</a>
+                 <ul>
+                   <li><a href="5kg.html">5kg </a></li>
+                   <li><a href="8kg.html">8kg</a></li>
+                   <li><a href="10kg.html">10kg</a></li>
+                 </ul>
+              </li>
+            </ul>
+            </li>
+            <li><a href="racks.html">Racks</a></li>
+            <li><a href="rusticos.html">Rústicos</a></li>
+            </ul>
+        </nav>           
+    </header>
+    <script type="text/javascript">
+            $(document).ready(function(){
+    
+              $('.sub-btn').click(function(){
+                $(this).next('.sub-menu').slideToggle();
+                $(this).find('.dropdown').toggleClass('rotate');
+              });
+    
+              $('.menu-btn').click(function(){
+                $('.side-bar').addClass('active');
+                $('.menu-btn').css("visibility", "hidden");
+              });
+    
+              $('.close-btn').click(function(){
+                $('.side-bar').removeClass('active');
+                $('.menu-btn').css("visibility", "visible");
+              });
+    
+            });
+        </script>
+    <main>
+            <div class="nomedobloco">
+                <h1>MULTIUSOS</h1>
+            </div>
+            <div id="promocaoPrincipal">
+            <div id="promocaoBloco1">
+                <div class="promocaoBloco1">
+                    <div class="promocaoImg">
+                        <img src="./imagens/multiuso.jpg" alt="Foto de forno eletrico">
+                    </div>
+                    <div class="promocaoDescricao">
+                        <h1>R$0,00</h1>
+                    </div>
+                    <div class="botaoComprar">
+                        <a target="blank" href="https://api.whatsapp.com/send?phone=5551985620262&text=Ol%C3%A1,%20tenho%20interesse%20no%20item%20%22Forno%20el%C3%A9trico%22">Compre pelo Whats</a>
+                    </div>
+                </div>
+                <div class="promocaoBloco1">
+                    <div class="promocaoImg">
+                        <img src="./imagens/multiusos2.jpg" alt="Foto de escrivaninha">
+                    </div>
+                    <div class="promocaoDescricao">
+                        <h1>R$0,00</h1>
+                    </div>
+                    <div class="botaoComprar">
+                        <a target="blank" href="https://api.whatsapp.com/send?phone=5551985620262&text=Ol%C3%A1,%20tenho%20interesse%20no%20item%20%22Escrivaninha%22">Compre pelo Whats</a>
+                    </div>
+                </div>
+                <div class="promocaoBloco1">
+                    <div class="promocaoImg">
+                        <img src="./imagens/multiuso3.jpg" alt="Foto de armário de cozinha">
+                    </div>
+                    <div class="promocaoDescricao">
+                        <h1>R$0,00</h1>
+                    </div>
+                    <div class="botaoComprar">
+                        <a target="blank" href="https://api.whatsapp.com/send?phone=5551985620262&text=Ol%C3%A1,%20tenho%20interesse%20no%20item%20%22Arm%C3%A1rio%20de%20cozinha%22">Compre pelo Whats</a>
+                    </div>
+                </div>
+            </div>
+            <div id="promocaoBloco1">
+                <div class="promocaoBloco1">
+                    <div class="promocaoImg">
+                        <img src="./imagens/multiusos 4.jpg" alt="Foto de armário">
+                    </div>
+                    <div class="promocaoDescricao">
+                        <h1>R$0,00</h1>
+                    </div>
+                    <div class="botaoComprar">
+                        <a target="blank" href="https://api.whatsapp.com/send?phone=5551985620262&text=Ol%C3%A1,%20tenho%20interesse%20no%20item%20%22Arm%C3%A1rio%22">Compre pelo Whats</a>
+                    </div>
+                </div>
+                <div class="promocaoBloco1">
+                    <div class="promocaoImg">
+                        <img src="./imagens/multiusos 5.jpg" alt="Armário">
+                    </div>
+                    <div class="promocaoDescricao">
+                        <h1>R$0,00</h1>
+                    </div>
+                    <div class="botaoComprar">
+                        <a target="blank" href="https://api.whatsapp.com/send?phone=5551985620262&text=Ol%C3%A1,%20tenho%20interesse%20no%20item%20%22Arm%C3%A1rio%22">Compre pelo Whats</a>
+                    </div>
+                </div>
+                <div class="promocaoBloco1">
+                    <div class="promocaoImg">
+                        <img src="./imagens/multiuso6.jpg" alt="Foto de fruteira">
+                    </div>
+                    <div class="promocaoDescricao">
+                        <h1>R$0,00</h1>
+                    </div>
+                    <div class="botaoComprar">
+                        <a target="blank" href="https://api.whatsapp.com/send?phone=5551985620262&text=Ol%C3%A1,%20tenho%20interesse%20no%20item%20%22Fruteira%22">Compre pelo Whats</a>
+                    </div>
+                </div>
+            </div>
+            <div id="promocaoBloco1">
+                <div class="promocaoBloco1">
+                    <div class="promocaoImg">
+                        <img src="./imagens/multiusos 7.jpg" alt="Foto de armário">
+                    </div>
+                    <div class="promocaoDescricao">
+                        <h1>R$0,00</h1>
+                    </div>
+                    <div class="botaoComprar">
+                        <a target="blank" href="https://api.whatsapp.com/send?phone=5551985620262&text=Ol%C3%A1,%20tenho%20interesse%20no%20item%20%22Arm%C3%A1rio%22">Compre pelo Whats</a>
+                    </div>
+                </div>
+                <div class="promocaoBloco1">
+                    <div class="promocaoImg">
+                        <img src="./imagens/multiuso 8.jpg" alt="Foto de roupeiro">
+                    </div>
+                    <div class="promocaoDescricao">
+                        <h1>R$0,00</h1>
+                    </div>
+                    <div class="botaoComprar">
+                        <a target="blank" href="https://api.whatsapp.com/send?phone=5551985620262&text=Ol%C3%A1,%20tenho%20interesse%20no%20item%20%22Roupeiro%22">Compre pelo Whats</a>
+                    </div>
+                </div>
+                <div class="promocaoBloco1">
+                    <div class="promocaoImg">
+                        <img src="./imagens/multiuuso 9.jpg" alt="Foto de roupeiro">
+                    </div>
+                    <div class="promocaoDescricao">
+                        <h1>R$0,00</h1>
+                    </div>
+                    <div class="botaoComprar">
+                        <a target="blank" href="https://api.whatsapp.com/send?phone=5551985620262&text=Ol%C3%A1,%20tenho%20interesse%20no%20item%20%22Roupeiro%22">Compre pelo Whats</a>
+                    </div>
+                </div>
+            </div>
+            <div id="promocaoBloco1">
+                <div class="promocaoBloco1">
+                    <div class="promocaoImg">
+                        <img src="./imagens/multiuso 10.jpg" alt="Foto de roupeiro">
+                    </div>
+                    <div class="promocaoDescricao">
+                        <h1>R$0,00</h1>
+                    </div>
+                    <div class="botaoComprar">
+                        <a target="blank" href="https://api.whatsapp.com/send?phone=5551985620262&text=Ol%C3%A1,%20tenho%20interesse%20no%20item%20%22Roupeiro%22">Compre pelo Whats</a>
+                    </div>
+                </div>
+                <div class="promocaoBloco1">
+                    <div class="promocaoImg">
+                        <img src="./imagens/multiuso 11.jpg" alt="Foto de roupeiro">
+                    </div>
+                    <div class="promocaoDescricao">
+                        <h1>R$0,00</h1>
+                    </div>
+                    <div class="botaoComprar">
+                        <a target="blank" href="https://api.whatsapp.com/send?phone=5551985620262&text=Ol%C3%A1,%20tenho%20interesse%20no%20item%20%22Roupeiro%22">Compre pelo Whats</a>
+                    </div>
+                </div>
+                <div class="promocaoBloco1">
+                    <div class="promocaoImg">
+                        <img src="./imagens/multiuso  13.jpg" alt="Foto de roupeiro">
+                    </div>
+                    <div class="promocaoDescricao">
+                        <h1>R$0,00</h1>
+                    </div>
+                    <div class="botaoComprar">
+                        <a target="blank" href="https://api.whatsapp.com/send?phone=5551985620262&text=Ol%C3%A1,%20tenho%20interesse%20no%20item%20%22Roupeiro%22">Compre pelo Whats</a>
+                    </div>
+                </div>
+            </div>
+            <div id="promocaoBloco1">
+                <div class="promocaoBloco1">
+                    <div class="promocaoImg">
+                        <img src="./imagens/multiuso 15.jpg" alt="Foto de escrivaninha">
+                    </div>
+                    <div class="promocaoDescricao">
+                        <h1>R$0,00</h1>
+                    </div>
+                    <div class="botaoComprar">
+                        <a target="blank" href="https://api.whatsapp.com/send?phone=5551985620262&text=Ol%C3%A1,%20tenho%20interesse%20no%20item%20%22Escrivaninha%22">Compre pelo Whats</a>
+                    </div>
+                </div>
+                <div class="promocaoBloco1">
+                    <div class="promocaoImg">
+                        <img src="./imagens/multiuso 16.jpg" alt="Foto de armário de cozinha">
+                    </div>
+                    <div class="promocaoDescricao">
+                        <h1>R$0,00</h1>
+                    </div>
+                    <div class="botaoComprar">
+                        <a target="blank" href="https://api.whatsapp.com/send?phone=5551985620262&text=Ol%C3%A1,%20tenho%20interesse%20no%20item%20%22Arm%C3%A1rio%20de%20cozinha%22">Compre pelo Whats</a>
+                    </div>
+                </div>
+                <div class="promocaoBloco1">
+                    <div class="promocaoImg">
+                        <img src="./imagens/multiuso 17.jpg" alt="Foto de forno eletrico">
+                    </div>
+                    <div class="promocaoDescricao">
+                        <h1>R$0,00</h1>
+                    </div>
+                    <div class="botaoComprar">
+                        <a target="blank" href="https://api.whatsapp.com/send?phone=5551985620262&text=Ol%C3%A1,%20tenho%20interesse%20no%20item%20%22Forno%20el%C3%A9trico%22">Compre pelo Whats</a>
+                    </div>
+                </div>
+            </div>
+            <div id="promocaoBloco1">
+                <div class="promocaoBloco1">
+                    <div class="promocaoImg">
+                        <img src="./imagens/multiuso 18.jpg" alt="Foto de armário de cozinha">
+                    </div>
+                    <div class="promocaoDescricao">
+                        <h1>R$0,00</h1>
+                    </div>
+                    <div class="botaoComprar">
+                        <a target="blank" href="https://api.whatsapp.com/send?phone=5551985620262&text=Ol%C3%A1,%20tenho%20interesse%20no%20item%20%22Arm%C3%A1rio%20de%20cozinha%22">Compre pelo Whats</a>
+                    </div>
+                </div>
+                <div class="promocaoBloco1">
+                    <div class="promocaoImg">
+                        <img src="./imagens/multiusos 19.jpg" alt="Foto de Fogão Cooktop">
+                    </div>
+                    <div class="promocaoDescricao">
+                        <h1>R$0,00</h1>
+                    </div>
+                    <div class="botaoComprar">
+                        <a target="blank" href="https://api.whatsapp.com/send?phone=5551985620262&text=Ol%C3%A1,%20tenho%20interesse%20no%20item%20%22Fog%C3%A3o%20Cooktop%22">Compre pelo Whats</a>
+                    </div>
+                </div>
+                <div class="promocaoBloco1">
+                    <div class="promocaoImg">
+                        <img src="./imagens/multiuso 20.jpg" alt="Foto de cama de solteiro">
+                    </div>
+                    <div class="promocaoDescricao">
+                        <h1>R$0,00</h1>
+                    </div>
+                    <div class="botaoComprar">
+                        <a target="blank" href="https://api.whatsapp.com/send?phone=5551985620262&text=Ol%C3%A1,%20tenho%20interesse%20no%20item%20%22Cama%20de%20solteiro%22">Compre pelo Whats</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

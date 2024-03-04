@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8" ></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Brick & Cia</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="side">
+
+            <div class="menu-btn">
+              <i class="fas fa-bars"></i>
+            </div>
+            <div class="side-bar active">
+              <div class="close-btn">
+                <i class="fas fa-times"></i>
+              </div>
+              <div class="menu">
+                <div class="item"><a href="index.html">Inicio</a></div>
+                <div class="item"><a href="multiusos.html">Multiusos</a></div>
+                <div class="item">
+                  <a class="sub-btn">Eletro<i class="fas fa-angle-right dropdown"></i></a>
+                  <div class="sub-menu">
+                    <a href="tv.html" class="sub-item">TV</a>
+                    <a href="som.html" class="sub-item">Som</a>
+                    <a href="micro.html" class="sub-item">Micro-ondas</a>
+                  </div>
+                </div>
+                <div class="item"><a href="mesas.html">Mesas</a></div>
+                <div class="item"><a href="sofas.html">Sofás</a></div>
+                <div class="item">
+                  <a class="sub-btn">Máquinas de Lavar<i class="fas fa-angle-right dropdown"></i></a>
+                  <div class="sub-menu">
+                    <a href="5kg.html" class="sub-item">5kg</a>
+                    <a href="8kg.html" class="sub-item">8kg</a>
+                    <a href="10kg.html" class="sub-item">10kg</a>
+                  </div>
+                </div>
+                <div class="item"><a href="racks.html">Racks</a></div>
+                <div class="item"><a href="rusticos.html">Rústicos</a></div>
+              </div>
+            </div>
+    
+          </nav>
+        
+    
+    
+    
+    
+        
+        <nav class="menuHeader">    
+            <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="multiusos.html">Multiusos</a></li>
+            <li><a href="#">Eletro</a>
+                <ul>
+                    <li><a href="tv.html">Tv</a></li>
+                    <li><a href="som.html">Som</a></li>
+                    <li><a href="micro.html">Micro-ondas</a></li>
+                </ul>
+            </li>
+            <li><a href="mesas.html">Mesas</a></li>
+            <li><a href="sofas.html">Sofás</a></li>
+            <li><a href="#">Máquinas de Lavar</a>
+            <ul>
+              <li class="muellerHeader"><a href="#">Mueller</a>
+                 <ul>
+                   <li><a href="5kg.html">5kg </a></li>
+                   <li><a href="8kg.html">8kg</a></li>
+                   <li><a href="10kg.html">10kg</a></li>
+                 </ul>
+              </li>
+            </ul>
+            </li>
+            <li><a href="racks.html">Racks</a></li>
+            <li><a href="rusticos.html">Rústicos</a></li>
+            </ul>
+        </nav>           
+    </header>
+    <script type="text/javascript">
+            $(document).ready(function(){
+    
+              $('.sub-btn').click(function(){
+                $(this).next('.sub-menu').slideToggle();
+                $(this).find('.dropdown').toggleClass('rotate');
+              });
+    
+              $('.menu-btn').click(function(){
+                $('.side-bar').addClass('active');
+                $('.menu-btn').css("visibility", "hidden");
+              });
+    
+              $('.close-btn').click(function(){
+                $('.side-bar').removeClass('active');
+                $('.menu-btn').css("visibility", "visible");
+              });
+    
+            });
+        </script>
+    <main>
+        <div id="promocaoPrincipal">
+            <div id="promocaoBloco1">
+                <div class="promocaoBloco1">
+                    <div class="promocaoImg">
+                        <img src="" alt="" id="preview-image">
+                    </div>
+                    <div class="promocaoDescricao">
+                        <h1>R$0,00</h1>
+                    </div>
+                    <input type="file" name="image" id="image">
+                    <div>
+                        <input class="botaoEnviar" type="submit" value="Enviar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
