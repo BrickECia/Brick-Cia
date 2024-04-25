@@ -152,7 +152,7 @@
 #promocaoPrincipal{
     width: 100%;
     min-height: 800px;
-    background-image: url(./imagens/imagem\ entrada.jpg);
+    background-image: url(./imagens/fundonovo.jpg);
     background-repeat: repeat;
 }
 #promocaoBloco1, #promocaoBloco2{
@@ -364,7 +364,7 @@
     #promocaoPrincipal{
         width: 100%;
         height: 2200px;
-        background-image: url(./imagens/imagem\ entrada.jpg);
+        background-image: url(./imagens/fundonovo.jpg);
         background-repeat: repeat;
     }
     .promocaoBloco1, .promocaoBloco2{
